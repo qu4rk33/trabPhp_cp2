@@ -1,0 +1,87 @@
+body{
+  background-color:  rgba(255, 252, 255, 1)!important ;
+}
+.left{
+  background-color: rgb(60, 170, 222);
+  position:fixed;
+  padding: 10px;
+  top: 0; left: 0;
+  height:100%;
+  width:75px!important; //set dimensions
+  transition: width ease .5s;
+
+}
+.butao {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  color: #fff;
+  width: 50px;
+  transform: translateZ();
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: -22px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.butao:before {
+pointer-events: none;
+position: absolute;
+z-index: -1;
+content: '';
+border-style: solid;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-property: transform;
+transition-property: transform;
+top: calc(50% - 10px);
+right: -10px;
+border-width: 10px 0 10px 10px;
+border-color: transparent transparent transparent rgb(60, 170, 222);
+}
+.butao:hover:before, .butao:focus:before, .butao:active:before {
+-webkit-transform: translateX(10px);
+transform: translateX(10px);
+}
+ul {
+   list-style:none!important;
+ }
+ a {
+   background-color: transparent; }
+
+ /**
+    * Improve readability of focused elements when they are also in an
+    * active/hover state.
+    */
+ a:active,
+ a:hover {
+   outline: 0;
+  }
+.right{
+  margin-left: 55px;
+  background-color: rgb(26, 26, 26);
+  position:fixed;
+  z-index:-1!important;
+  padding: 10px;
+  top: 0; left: 0;
+  height:100%;
+  width:150px;
+  transition: width ease .5s;
+  display: none;
+
+}
+.submenu a {
+  color: rgb(255,255,255);
+  margin-left: 20px!important;
+  z-index: 9999!important;
+
+}
+.conteudo{
+  background-color: #B21212;
+  width:auto;
+  margin-left: 25%;
+  color: #0000000;
+  height: auto;
+}
